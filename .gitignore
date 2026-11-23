@@ -1,0 +1,13 @@
+node_modules/
+.agents/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+tmp/

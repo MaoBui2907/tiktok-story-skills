@@ -1,0 +1,32 @@
+# NOTICE
+
+Repo này là bộ skill viết story short-form tiếng Việt cho agent, phát hành theo
+license MIT (xem `LICENSE`), tác giả Mao Bui.
+
+Khi build, nhóm đã đọc một số repo skill công khai để lấy **ý tưởng và phương
+pháp**. Không có đoạn code hay văn bản nào của các repo dưới đây được copy vào
+repo này: không có file dịch, không có file sao chép, không vendor code. Bảng
+dưới ghi repo, license, commit đã tham chiếu và phần ý tưởng đã dùng, để người
+đọc kiểm lại được.
+
+## Upstream đã tham chiếu
+
+| Upstream | License | Commit SHA | Lấy gì |
+|---|---|---|---|
+| `https://github.com/iart-ai/tiktok-video-skills` | MIT | `88e7152fc2710fa16852d013959cfd988a8adc8b` | Ý tưởng khung retention + arc. Không chép văn bản. |
+| `https://github.com/social-media-skills/skills` | MIT | `f28cef2b7067ec64e79c9d85421c022c06659e03` | Ý WATCH/hook grammar/TikTok discovery + production doc. Không chép văn bản. |
+| `https://github.com/zenstory-ai/oh-story-claudecode` | MIT | `1d90495d9c640d574c9d26e0505d60cf0533d463` | Phân loại pattern "去AI味". Script viết mới cho tiếng Việt, không dùng code upstream. |
+| `https://github.com/coreyhaines31/marketingskills` | MIT | `5b2b400eec1e7e1cec76245a715d0b0d4fd2a9c1` | Ý tầng CTA/caption + tính liên tục series. Không chép văn bản. |
+
+## Ghi chú license
+
+- License của repo này: **MIT**, giữ nguyên toàn bộ quyền của người dùng repo.
+- **Không có đoạn code hay văn bản nào của upstream được copy.** Các file skill
+  trong `skills/` là bản viết mới bằng tiếng Việt; script
+  `skills/story-deslop/scripts/check-vi-ai-patterns.js` viết mới cho tiếng Việt,
+  không port regex hay logic của upstream.
+- Vì repo không chứa mã nguồn hay văn bản của upstream, nghĩa vụ của license MIT
+  upstream được thoả bằng việc ghi công ở file này: repo, license, commit SHA và
+  phần ý tưởng đã dùng.
+- SHA ở trên là commit đã tham chiếu tại thời điểm **2026-11-23**. Nếu upstream
+  đổi về sau, SHA trong bảng vẫn là mốc mình đã đọc.
