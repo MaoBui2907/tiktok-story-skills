@@ -54,8 +54,7 @@ Quy tắc: nếu bỏ emoji mà câu vẫn đủ nghĩa, bỏ emoji.
 ### Hashtag
 
 Đặt cuối caption, 2–4 cái, viết thường, không nhồi. Xem thêm
-`../tiktok-native/references/search-keywords-vi.md`.
-
+`../../tiktok-native/references/search-keywords-vi.md`.
 ## Chữ trên màn hình
 
 ### Quy ước

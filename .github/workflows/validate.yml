@@ -1,0 +1,36 @@
+name: validate
+
+on:
+  push:
+    branches: [main, 'feat/**']
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    env:
+      DISABLE_TELEMETRY: '1'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate repo structure and content
+        run: node scripts/validate.js
+
+      - name: Self-test Vietnamese AI-pattern checker
+        run: node skills/story-deslop/scripts/selftest.js
+
+      - name: Smoke-test real install with skills CLI
+        run: |
+          npx -y skills@1.9.0 add ./ --skill '*' -a '*' -y
+          test -f .agents/skills/story-core/SKILL.md
+          test -f .agents/skills/vi-voice/SKILL.md
