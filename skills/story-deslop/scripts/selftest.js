@@ -14,6 +14,7 @@
 
 const { spawnSync } = require('node:child_process');
 const fs = require('node:fs');
+const os = require('node:os');
 const path = require('node:path');
 
 const HERE = __dirname;
@@ -141,6 +142,46 @@ assert(
   tot.json ? JSON.stringify(tot.json.findings.map((f) => `${f.line}:${f.rule}`)) : 'n/a',
 );
 assert('tot.md: exit code = 0', tot.code === 0, `nhận ${tot.code}`);
+assert(
+  'tot.md: câu "không phải … mà <nguyên nhân>" không bị bắt (chống báo động giả)',
+  !fs.readFileSync(path.join(FIXTURES, 'tot.md'), 'utf8')
+    .split('\n')
+    .some((line, idx) => {
+      if (!line.includes('Không phải tôi không muốn')) return false;
+      return tot.json !== null && tot.json.findings.some((f) => f.line === idx + 1);
+    }),
+  'rule not-a-but-b bắt nhầm câu kể tự nhiên',
+);
+
+/* Rule not-a-but-b: chỉ bắt "mà là"/"mà còn", không bắt "mà" + nguyên nhân */
+const natTmp = path.join(os.tmpdir(), `deslop-natural-${process.pid}.md`);
+fs.writeFileSync(natTmp, 'Không phải tôi không muốn đi mà tại hết tiền.\n', 'utf8');
+const natRun = runCheckerJson(['--check', natTmp, '--json']);
+assert(
+  'câu tự nhiên "không phải … mà tại …": 0 finding, exit 0',
+  natRun.json !== null && natRun.json.counts.total === 0 && natRun.code === 0,
+  natRun.json ? `finding=${natRun.json.counts.total} exit=${natRun.code}` : 'json hỏng',
+);
+
+fs.writeFileSync(natTmp, 'Đó không phải là sự keo kiệt mà là sự hy sinh.\n', 'utf8');
+const realRun = runCheckerJson(['--check', natTmp, '--json']);
+assert(
+  'khuôn thật "không phải … mà là …" vẫn bị bắt (review_required, exit 1)',
+  realRun.json !== null
+    && realRun.json.counts.review_required === 1
+    && countByRule(realRun.json, 'not-a-but-b') === 1
+    && realRun.code === 1,
+  realRun.json ? `rr=${realRun.json.counts.review_required} exit=${realRun.code}` : 'json hỏng',
+);
+
+fs.writeFileSync(natTmp, 'Bà không phải khó tính mà còn rất khắt khe.\n', 'utf8');
+const realRun2 = runCheckerJson(['--check', natTmp, '--json']);
+assert(
+  'khuôn thật "không phải … mà còn …" vẫn bị bắt',
+  realRun2.json !== null && countByRule(realRun2.json, 'not-a-but-b') === 1,
+  realRun2.json ? `rule=${countByRule(realRun2.json, 'not-a-but-b')}` : 'json hỏng',
+);
+fs.rmSync(natTmp, { force: true });
 
 /* ---------- 3. fixture edge.md (bỏ qua code block + skip) ---------- */
 

@@ -120,9 +120,17 @@ file:line:col  severity  rule  match
 Exit code: `0` không có finding vượt ngưỡng `--fail-on`, `1` vượt ngưỡng, `2` lỗi
 dùng/file.
 
-`--fail-on` mặc định là `advisory`: nghĩa là có bất kỳ finding nào cũng exit 1.
-Trong CI thì dùng `--fail-on=none` (chỉ báo cáo) hoặc `--fail-on=advisory` (chặn)
-tuỳ mức khắt khe muốn áp.
+`--fail-on` có ba mức, mặc định là `advisory`:
+
+| Mức | Exit 1 khi nào | Dùng cho |
+|---|---|---|
+| `none` | Không bao giờ fail vì finding (chỉ báo cáo) | Chạy để xem, không chặn |
+| `advisory` (mặc định) | Có ít nhất một finding `review_required` | Mức thường dùng: finding `advisory` chỉ để đọc, không chặn |
+| `strict` | Có bất kỳ finding nào, kể cả `advisory` | Chỉ dùng khi muốn zero-tolerance |
+
+Nghĩa là ở mức mặc định, một finding `advisory` **không** làm exit 1 — script
+vẫn in ra để đọc, nhưng không chặn. Muốn chặn mọi finding thì phải dùng
+`--fail-on=strict`.
 
 ## Bỏ qua có chủ đích
 

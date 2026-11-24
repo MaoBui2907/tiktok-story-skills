@@ -68,7 +68,11 @@ Chi tiết và 8 ví dụ: `empty-sentences-vi.md`.
 | **Vì sao đọc ra AI** | Cấu trúc này chỉ có giá trị khi người đọc đã có hiểu nhầm trong đầu. Dùng mà không dựng hiểu nhầm trước thì thành rỗng |
 | **Cách sửa** | Nói thẳng vế đúng, hoặc dựng hiểu nhầm trước rồi mới lật |
 | **Được giữ khi** | Hiểu nhầm đã được nêu rõ ngay trước đó, và cần lật dứt khoát |
-| **Script** | `not-a-but-b` (`review_required`) |
+| **Script** | `not-a-but-b` (`review_required`) — chỉ bắt `mà là` / `mà còn`, **không** bắt `mà` nối nguyên nhân |
+
+Lưu ý về phạm vi của rule: câu "Không phải tôi không muốn đi mà tại hết tiền"
+là lời kể tự nhiên (`mà` nối nguyên nhân), không phải khuôn lật. Rule chỉ khớp
+`mà là` và `mà còn` để không chặn câu người Việt nói thật.
 
 ## Nhóm 6 — Ẩn dụ sáo
 

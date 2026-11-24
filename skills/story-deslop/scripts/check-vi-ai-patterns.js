@@ -62,7 +62,12 @@ const RULES = [
     id: 'not-a-but-b',
     severity: 'review_required',
     kind: 'regex',
-    re: /không\s+phải\s+(?:là\s+)?[^.!?\n]{0,70}?\s+mà\s+(?:là\s+)?/giu,
+    /*
+     * Chỉ bắt khuôn lật "không phải A **mà là** B" / "mà còn B".
+     * KHÔNG bắt "không phải … mà <nguyên nhân>" — câu người Việt nói thật,
+     * ví dụ "Không phải tôi không muốn đi mà tại hết tiền."
+     */
+    re: /không\s+phải\s+(?:là\s+)?[^.!?\n]{0,70}?\s+mà\s+(?:là|còn)\s/giu,
     goi_y: 'Nói thẳng vế đúng, hoặc tách thành hai câu. Chỉ giữ cấu trúc này khi thật sự cần lật một hiểu nhầm đã nêu trước đó.',
   },
   {

@@ -18,6 +18,8 @@ Mẹ về. Bà nhìn cái ngăn kéo, nhìn tôi. Bà không hỏi gì. Bà đi 
 
 Tôi nói: "Mẹ ơi." Bà ừ. Tôi không nói được câu thứ hai.
 
+Không phải tôi không muốn hỏi mà tại tôi sợ câu trả lời.
+
 Bây giờ cuốn sổ đó nằm trong cặp tôi. Thỉnh thoảng tôi mở ra, ghi thêm một dòng.
 
 ```js

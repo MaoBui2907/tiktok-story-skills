@@ -18,10 +18,10 @@ là cái vỏ của một chuyện không bình thường.
 | # | hook | archetype | payoff nó hứa | rủi ro |
 |---|---|---|---|---|
 | 1 | Mẹ tôi nói "mẹ đi chợ đây" mỗi sáng, suốt mười năm. | mở loop | Chuyện gì thật sự xảy ra trong buổi sáng đó | Chậm — người xem phải chờ tới cảnh bến xe mới hiểu tại sao câu này đáng ngờ |
-| 2 | Bốn giờ sáng, mẹ tôi đã ra khỏi nhà. Bảy giờ bà mới tới chợ. | con số cụ thể | Ba tiếng đó mẹ đi đâu | Số giờ có thể làm người xem tưởng đây là video về thời gian biểu |
+| 2 | Bốn giờ sáng mẹ đã đi. Sáu giờ bà mới tới chợ. | con số cụ thể | Hai tiếng đó mẹ đi đâu | Số giờ có thể làm người xem tưởng đây là video về thời gian biểu |
 | 3 | Đừng tin câu "mẹ đi chợ đây" mà mẹ bạn nói mỗi sáng. | phủ định | Câu đó che một chuyện khác | Giọng dạy bảo, dễ nghe như video lên lớp |
 | 4 | Cái làn rau thì đầy. Còn cái lưng mẹ thì không. | đối lập trong-ngoài | Có gì đó mẹ làm mà người kể không biết | Hơi văn vẻ, cần giữ đúng giọng kể để không thành sáo |
-| 5 | "Mẹ đi chợ đây." Bà nói câu đó mười năm, cùng một giờ, rồi một hôm tôi đi theo. | lời thoại giữa cuộc | Người kể đã thấy gì khi đi theo | Hook dài nhất trong 5 câu, có thể quá 3 giây đọc |
+| 5 | "Mẹ đi chợ đây." Mười năm, một hôm tôi đi theo bà. | lời thoại giữa cuộc | Người kể đã thấy gì khi đi theo | Mở bằng thoại nên phải rõ ai nói; đọc nhanh dễ mất vế "mười năm" |
 
 ## Test "payoff có trả được không" (`hook-truth-test.md`)
 
@@ -40,7 +40,7 @@ mười năm để con không phải nghỉ học. Không hook nào hứa quá p
 
 **Câu 3 — payoff có đến trước khi người xem bỏ đi không?**
 
-Payoff ở giây 21–27 trên video 30 giây, tức là trong khoảng một phần ba cuối.
+Payoff ở giây 19–27 trên video 30 giây, tức là trong khoảng một phần ba cuối.
 Không hook nào đẩy payoff ra ngoài video.
 
 ## Chọn hook
@@ -67,5 +67,5 @@ tiếng vẫn hiểu được nhờ chữ trên màn hình.
 ## Ghi chú
 
 Hook 5 là phương án dự phòng nếu hook 1 test kém: nó vẫn dùng cùng chất liệu nhưng
-thêm hành động "tôi đi theo", tức là hứa cụ thể hơn. Đổi sang hook 5 thì phải
-kiểm lại độ dài đọc, vì đây là hook dài nhất trong bảng.
+thêm hành động "tôi đi theo", tức là hứa cụ thể hơn. Cả 5 hook đều nằm trong
+khoảng 8–14 tiếng đọc (11–13), nên so sánh được công bằng.

@@ -21,17 +21,17 @@ thật bị giấu. Đây là một ý, không phải hai.
 
 - **Loop mở (giây 0–3):** bà nói bà đi chợ. Nhưng có gì đó trong cách bà nói câu
   đó mỗi sáng, đúng giờ, không bao giờ kể chuyện chợ.
-- **Loop đóng (giây 22–27):** bà không chỉ đi chợ. Bà bốc hàng ở bến xe trước.
-- **Loop đóng chỉ một lần.** Không trả lời sớm ở giữa video.
+- **Loop đóng (giây 27–30):** câu chốt của mẹ — lý do bà giấu. Loop chỉ đóng ở
+  shot cuối, không trả lời sớm ở giữa video.
 
 ## Budget 30 giây (heuristic)
 
 | Chặng | Thời gian | Ghi chú |
 |---|---|---|
-| Hook | 0–3s | Câu nói của mẹ + chữ trên màn hình |
-| Tension | 3–21s | Mười năm bình thường → buổi sáng tôi đi theo |
-| Payoff | 21–27s | Cảnh bến xe, sự thật |
-| Loop | 27–30s | Câu chốt: lý do bà giấu |
+| Hook | 0–3s | Câu nói của mẹ + chữ trên màn hình (shot 1) |
+| Tension | 3–19s | Mười năm bình thường → buổi sáng tôi đi theo (shot 2–5) |
+| Payoff | 19–27s | Cảnh bến xe, sự thật, "mười năm không một lần kể" (shot 6–8) |
+| Loop | 27–30s | Câu chốt: lý do bà giấu (shot 9) |
 
 ## Checklist tự kiểm (`story-core/references/self-check.md`)
 
@@ -45,7 +45,7 @@ thật bị giấu. Đây là một ý, không phải hai.
 | 6 | Mỗi beat có việc phải xảy ra? | Có |
 | 7 | Không có beat chào hỏi hay xin like? | Có |
 | 8 | Có chỗ đổi hướng? | Có — bà rẽ về bến xe, không về chợ |
-| 9 | Payoff chiếm ít nhất một phần năm video? | Có — 6 giây trên 30 |
+| 9 | Payoff chiếm ít nhất một phần năm video? | Có — 8 giây trên 30 |
 | 10 | Đọc to payoff, người nghe hiểu ngay? | Có |
 
 Đủ 10 mục → chuyển sang `hook-writer`.

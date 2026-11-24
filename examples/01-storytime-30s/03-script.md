@@ -39,7 +39,7 @@ giây trước câu chốt. Tiếng hiện trường dùng được: tiếng xe 
 |---|---|
 | Cộng `timing` = 30 giây | 3+4+4+5+3+3+2+3+3 = 30 |
 | Mỗi dòng một shot | Có |
-| `on-screen text` ≤ 8 từ/dòng | Dòng dài nhất 6 từ |
+| `on-screen text` ≤ 8 từ/dòng | Dòng dài nhất 7 từ (shot 1, 5, 6) |
 | `sound` ghi cụ thể mọi dòng | Có |
 | `spoken` là lời đọc thật | Có |
 | Có khoảng `im` trước payoff và câu chốt | Có — shot 7, 8 |

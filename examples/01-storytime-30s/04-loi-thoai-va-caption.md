@@ -30,8 +30,8 @@ Câu đều ngắn, mỗi câu một việc. Đoạn "Mười năm. Không một
 ngắn liền nhau ở chỗ căng nhất — cố ý.
 
 Chỗ đã sửa: câu "Cho tới một hôm tôi dậy trước bà, và tôi thấy bà không đi về phía
-chợ" ở bước 3 bị tách thành một câu duy nhất có mệnh đề phụ, đọc lên hơi dài.
-Giữ nguyên nhưng thêm dấu phẩy trước "và" để có chỗ ngắt.
+chợ" đọc lên dài vì mệnh đề phụ. Giữ nguyên một câu nhưng thêm dấu phẩy trước
+"và" để có chỗ ngắt hơi.
 
 ### 2. Khẩu ngữ
 
@@ -89,15 +89,17 @@ cái, đặt cuối.
 
 | Shot | Chữ | Số từ |
 |---|---|---|
-| 1 | Mẹ tôi nói câu này mỗi sáng | 6 |
+| 1 | Mẹ tôi nói câu này mỗi sáng | 7 |
 | 2 | Cùng một giờ, cùng một câu | 6 |
-| 3 | Mười năm không ai hỏi thêm | 5 |
-| 4 | Một hôm tôi dậy trước bà | 5 |
-| 5 | Bà rẽ trái, về phía bến xe | 6 |
-| 6 | Bà bốc hàng từ bốn giờ sáng | 6 |
-| 7 | Sáu giờ bà mới ra chợ | 5 |
-| 8 | Mười năm, không một lần kể | 5 |
+| 3 | Mười năm không ai hỏi thêm | 6 |
+| 4 | Một hôm tôi dậy trước bà | 6 |
+| 5 | Bà rẽ trái, về phía bến xe | 7 |
+| 6 | Bà bốc hàng từ bốn giờ sáng | 7 |
+| 7 | Sáu giờ bà mới ra chợ | 6 |
+| 8 | Mười năm, không một lần kể | 6 |
 | 9 | Vì con, bà nói vậy | 5 |
+
+Dòng dài nhất 7 từ, vẫn dưới ngưỡng 8 từ/dòng của quy ước repo.
 
 ## Quy trình 4 bước đã chạy
 
