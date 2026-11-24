@@ -28,7 +28,7 @@ là cái vỏ của một chuyện không bình thường.
 **Câu 1 — hook hứa gì?**
 
 - Hook 1 hứa: câu nói đó che một chuyện, và chuyện đó quan trọng.
-- Hook 2 hứa: ba tiếng chênh lệch có lý do.
+- Hook 2 hứa: hai tiếng chênh lệch có lý do.
 - Hook 3 hứa: câu nói của mẹ không đúng sự thật.
 - Hook 4 hứa: mẹ làm việc gì đó nặng hơn người kể biết.
 - Hook 5 hứa: đi theo mẹ thì thấy được chuyện bị giấu.
@@ -51,7 +51,7 @@ Lý do (hai câu): chất liệu mạnh nhất của chuyện là câu nói bìn
 không ai nghi, và hook 1 dùng đúng câu đó làm điểm vào. Bốn hook còn lại hay hơn
 về mặt gây tò mò nhưng đều **nói trước** một phần sự thật — hook 2 nói mẹ ra khỏi
 nhà lúc bốn giờ, hook 4 nói về cái lưng mẹ — và như vậy là làm mất chỗ lật ở giây
-21.
+19.
 
 ## Ba kênh của hook đã chọn
 

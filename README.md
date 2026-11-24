@@ -179,6 +179,11 @@ node scripts/validate.js
 Kiểm 12 nhóm: layout skill, frontmatter, link chết, references, placeholder, secret,
 luật số liệu, ví dụ, license/NOTICE, README, độ dài skill, đúng 5 skill.
 
+Nhóm "ví dụ" không chỉ đếm file: nó còn đối chiếu số liệu giữa các file của cùng
+một story — mốc giây trong `01`/`02` phải là ranh giới shot của `03`, bảng đếm chữ
+trong `04` phải khớp text và số đếm thật của `03`, 5 hook phải trong dải 8–14 tiếng,
+và số giờ trong hook phải khớp ô "N tiếng" của chính nó.
+
 Kiểm riêng checker tiếng Việt:
 
 ```sh
