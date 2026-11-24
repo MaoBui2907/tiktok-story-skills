@@ -1,5 +1,4 @@
 node_modules/
-.agents/
 .env
 .env.*
 *.pem
@@ -11,3 +10,9 @@ Thumbs.db
 .idea/
 .vscode/
 tmp/
+
+# Artifacts of `npx skills add` (smoke install in CI, local testing)
+.agents/
+agent/
+.claude/
+skills-lock.json

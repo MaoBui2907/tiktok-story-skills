@@ -1,0 +1,27 @@
+{
+  "name": "tiktok-story-skills",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bộ 5 skill tiếng Việt cho agent: viết story short-form TikTok từ ý tưởng đến script, hook, caption và kiểm văn AI.",
+  "license": "MIT",
+  "homepage": "https://github.com/MaoBui2907/tiktok-story-skills",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaoBui2907/tiktok-story-skills.git"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "test": "node scripts/validate.js && node skills/story-deslop/scripts/selftest.js",
+    "check:vi": "node skills/story-deslop/scripts/check-vi-ai-patterns.js"
+  },
+  "keywords": [
+    "agent-skills",
+    "tiktok",
+    "storytelling",
+    "vietnamese",
+    "short-form-video"
+  ]
+}
